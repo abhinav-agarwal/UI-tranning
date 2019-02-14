@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Timesheet
+		</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	</head>
+	<body class="body">
+		<header class="header">
+			<section class="header-bar">
+				<div class="row">
+					<div class="header-conatiner">
+						<div class="logo">
+							<a href="#" title="logo">
+								<img src="./assets/logo/argil-dx.png">
+							</a>
+						</div>
+						<div class="help-icons">
+							<ul class="menu clear">
+								<li class="user help-icon">
+									<a href="#">
+										<img class="user-icon" src="./assets/user/user.png"
+											srcset="./assets/user/user@3x.png 69w, ./assets/user/user@2x.png 46w, ./assets/user/user.png 23w"
+											sizes="23px" 
+											alt="User icon">
+									</a>
+								</li>
+								<li class="settings help-icon">
+									<a href="#">
+										<img class="settings-icon" src="./assets/settings/settings.png"
+											srcset="./assets/settings/settings@3x.png 78w, ./assets/settings/settings@2x.png 52w, ./assets/settings/settings.png 26w"
+											sizes="26px" 
+											alt="Settings icon">
+									</a>
+								</li>
+								<li class="bell help-icon">
+									<a href="#">
+										<img class="bell-icon" src="./assets/bell/bell.png"
+											srcset="./assets/bell/bell@3x.png 78w, ./assets/bell/bell@2x.png 52w, ./assets/bell/bell.png 26w"
+											sizes="26px" 
+											alt="Bell icon">
+									</a>
+								</li>
+								<li class="manager-view help-icon">
+									<span>
+										<img class="bell-icon" src="./assets/manager/layer-14.png"
+											srcset="./assets/manager/layer-14@3x.png 48w, ./assets/manager/layer-14@2x.png 32w, ./assets/manager/layer-14.png 16w"
+											sizes="16px" 
+											alt="Bell icon">
+									</span>
+									<span><a href="#">Switch to Manager View</a></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<nav class="navigation-bar">
+				<div class="row navigation-table">
+					<div class="navigation-row">
+						<ul class="menu">
+							<li><a href="#">Dashboard</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="submit-timesheet-container">
+					<div class="submit-timesheet">
+						<a href="#">
+							<span><!-- tick icon goes here-->
+								<img class="tick-icon" src="./assets/tick/layer-4.png"
+											srcset="./assets/tick/layer-4@3x.png 51w, ./assets/tick/layer-42x.png 34w, ./assets/tick/layer-4.png 17w"
+											sizes="17px" 
+											alt="User icon">
+							</span>
+							<span class="white-color">Submit Timesheet</span>
+						</a>
+					</div>
+					
+				</div>
+			</nav>
+		</header>
+		<main class="container row">
+			<!--dashboard section will spread in 9 cloumns-->
+			<section class="dashboard-section">
+				<section class="project-time-section">
+					<!--3 cloumns-->
+					<article class="project-hours rounded-border">
+						<ul>
+							<li>04 Projects</li>
+							<li>37 Hours spent this week</li>
+						</ul>
+					</article>
+					<!--6 cloumns-->
+					<article class="week-project rounded-border">
+							<div class="">
+								<!--img tag goes here-->
+								<span>Projects</span>
+								<span>worked this week</span>
+							</div>
+							<ul class="progress-ribbon">
+								<li>color 1</li>
+								<li>color 2</li>
+								<li>color 3</li>
+								<li>color 4</li>
+							</ul>
+							<div class="project-name-container">
+								<ul>
+									<li>
+										<span class="project-color-bar">project 1 color</span>
+										<span class="project-name-bar">project 1 name</span>
+									</li>
+									<li>
+										<span class="project-color-bar">project 2 color</span>
+										<span class="project-name-bar">project 2 name</span>
+									</li>
+									<li>
+										<span class="project-color-bar">project 3 color</span>
+										<span class="project-name-bar">project 3 name</span>
+									</li>
+									<li>
+										<span class="project-color-bar">project 4 color</span>
+										<span class="project-name-bar">project 4 name</span>
+									</li>
+								</ul>
+							</div>
+					</article>
+				</section>
+				<!--9 cloumns-->
+				<section class="timesheet-section">
+					<article class="timesheet-header">
+						<div><h3>Timesheet</h3></div>
+						<div>
+							<ul>
+								<li>Add task</li>
+								<li>Search bar</li>
+								<li>Day View</li>
+							</ul>
+						</div>
+					</article>
+					<!--only this body is scrollable-->
+					<article class="timesheet-body">
+						<!--timesheet for one day can contains multiple entries of projects-->
+						<div class="day-timesheet">
+							<ul class="">
+								<li>Today's Timesheet(3)</li>
+								<li>5th Feb. 2019</li>
+							</ul>
+							<!--can have n number of projects in a day-->
+							<div class="day-project">
+								<!--div for projct name and comment-->
+								<div class="project-details-container">
+									<ul>
+										<li><span>project color</span><span class="project-name">Bajaj Finance</span></li>
+										<li><span>comment icon</span><span class="project-comment">Working on Redesigning the UX of Loan providing platform for Bajaj Finance.</span></li>
+									</ul>
+								</div>
+								<!--div for time spent-->
+								<div class="project-details-container">
+									<ul>
+										<li><span>time spent icon</span><span class="time-spent">Time spent</span></li>
+										<li class="time-spent">04:00 pm - 07:00 pm</li>
+									</ul>
+								</div>
+								<!--div for edit and more options-->
+								<div class="options-container">
+									<ul>
+										<li class="project-details-edit">edit icon here</li>
+										<li class="project-options">more options icon</li>
+									</ul>
+								</div>
+							</div>
+							<!--adding more day projects-->
+							<div class="day-project">
+								<!--div for projct name and comment-->
+								<div class="project-details-container">
+									<ul>
+										<li><span>project color</span><span class="project-name">Bright House Finance</span></li>
+										<li><span>comment icon</span><span class="project-comment">Working on Redesigning the UX of Loan providing platform for BHF.</span></li>
+									</ul>
+								</div>
+								<!--div for time spent-->
+								<div class="project-details-container">
+									<ul>
+										<li><span>time spent icon</span><span class="time-spent">Time spent</span></li>
+										<li class="time-spent">01:00 pm - 04:00 pm</li>
+									</ul>
+								</div>
+								<!--div for edit and more options-->
+								<div class="options-container">
+									<ul>
+										<li class="project-details-edit">edit icon here</li>
+										<li class="project-options">more options icon</li>
+									</ul>
+								</div>
+							</div>
+							<!--adding more day projects-->
+							<div class="day-project">
+								<!--div for projct name and comment-->
+								<div class="project-details-container">
+									<ul>
+										<li><span>project color</span><span class="project-name">Internal Projects</span></li>
+										<li><span>comment icon</span><span class="project-comment">Working on Redesigning the UX of Loan providing platform for Internal Projects.</span></li>
+									</ul>
+								</div>
+								<!--div for time spent-->
+								<div class="project-details-container">
+									<ul>
+										<li><span>time spent icon</span><span class="time-spent">Time spent</span></li>
+										<li class="time-spent">09:00 am - 12:00 pm</li>
+									</ul>
+								</div>
+								<!--div for edit and more options-->
+								<div class="options-container">
+									<ul>
+										<li class="project-details-edit">edit icon here</li>
+										<li class="project-options">more options icon</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="day-timesheet">
+								<ul class="">
+									<li>Yestreday's Timesheet(3)</li>
+									<li>4th Feb. 2019</li>
+								</ul>
+								<!--can have n number of projects in a day-->
+								<div class="day-project">
+									<!--div for projct name and comment-->
+									<div class="project-details-container">
+										<ul>
+											<li><span>project color</span><span class="project-name">C&En</span></li>
+											<li><span>comment icon</span><span class="project-comment">Working on Redesigning the UX of Loan providing platform for C&En.</span></li>
+										</ul>
+									</div>
+									<!--div for time spent-->
+									<div class="project-details-container">
+										<ul>
+											<li><span>time spent icon</span><span class="time-spent">Time spent</span></li>
+											<li class="time-spent">05:00 pm - 07:00 pm</li>
+										</ul>
+									</div>
+									<!--div for edit and more options-->
+									<div class="options-container">
+										<ul>
+											<li class="project-details-edit">edit icon here</li>
+											<li class="project-options">more options icon</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					</article>
+				</section>
+			</section>
+			<!--notification section will spread in 3 cloumns-->
+			<aside class="notification-section rounded-border">
+				<h2 class="notification-header">my notifications</h2>
+				<article class="notifications">
+					<div class="notification-block">
+						<ul>
+							<li>
+								<input type="radio">
+							</li>
+							<li>
+								<span>Submit Timesheet</span>
+								<span>To: Ankur Mittal</span>
+							</li>
+							<li class="due-warning">
+								Due Today
+							</li>
+							<li>
+								<!--arrow icon goes here-->
+								arrow icon
+							</li>
+						</ul>
+					</div>
+					
+					<div>
+						<!--first image here-->
+						<span>Congratulation!</span>
+						<span>You have completed 9 tasks last week</span>
+						<!--second image here-->
+					</div>
+				</article>
+			</aside>
+		</main>
+		<footer class="footer">
+			<!--Page footer goes here-->
+		</footer>
+	</body>
+</html>
