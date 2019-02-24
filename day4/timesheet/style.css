@@ -1,22 +1,22 @@
 @font-face {
-    font-family: GraublauWeb;
-    src: url("path/GraublauWeb.otf") format("opentype");
+    font-family: 'Poppins';
+    src: url("./fonts/Poppins-Regular.otf") format("opentype");
 }
 
 .max-app-width{
-    max-width: 1290px;
+    max-width: 80.625rem;
     margin: 0 auto;
 }
 
 .body{
-    margin: 0px;
+    margin: 0rem;
     background: #ebebeb;
 }
 .background-white{
     background-color: #ffffff;
 }
 .header{
-    max-width: 2000px;
+    max-width: 125.000rem;
     margin: 0 auto;
     position: fixed;
     width: 100%;
@@ -26,11 +26,11 @@
 
 .header-conatiner{
     display: table;
-    height: 46px;
+    height: 2.875rem;
     width: 100%;
 }
 
-.logo{
+.logo-container{
     width: 25%;
     display: table-cell;
     vertical-align: middle;
@@ -44,7 +44,7 @@
     margin: 0;
     list-style: none;
     list-style-type: none;
-    padding: 0px;
+    padding: 0rem;
 }
 .menu>.help-icon{
     display: table-cell;
@@ -52,15 +52,15 @@
     vertical-align: middle;
 }
 .menu>.help-icon:not(:first-child){
-    margin-right: 25px;
+    margin-right: 1.563rem;
 }
 
-.bell{
-    padding-left: 34px;
-    border-left: 1px solid rgba(52, 57, 63, 0.36);
+.bell-icon-list-item{
+    padding-left: 2.125em;
+    border-left: 0.063em solid rgba(52, 57, 63, 0.36);
 }
 .menu>.help-icon.manager-view{
-    margin-right: 24px;
+    margin-right: 1.500rem;
     display: table;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .manager-view>span:first-child{
-    margin-right: 12px;
+    margin-right: 0.750rem;
 }
 
 .no-decoration{
@@ -78,7 +78,7 @@
 }
 
 .navigation-bar{
-    height: 36px;
+    height: 2.250rem;
     width: 100%;
     background-color: #101b33;
 }
@@ -97,10 +97,10 @@
     vertical-align: middle;
 }
 
-.navigation-table>.menu>li:not(:last-child){
-    margin-right: 20px;
+.navigation-table>.menu>.nav-link-listitem:not(:last-child){
+    margin-right: 1.250rem;
 }
-.navigation-table>.menu a{
+.navigation-table>.menu .nav-link{
     text-decoration: none;
     color: white;
 }
@@ -112,41 +112,41 @@
 }
 
 .notification-section{
-    width: 312px;
+    width: 19.500rem;
     background-color: #ffffff;
     float: right;
 }
 
 .dashboard-section{
-    width: calc(100% - 316px);
+    width: calc(100% - 19.750rem);
     display: inline-block;
 }
 
 .project-hours{
-    width: 316px;
-    height: 120px;
-    margin-right: 10px;
+    width: 19.750rem;
+    height: 7.500rem;
+    margin-right: 0.625rem;
     float: left;
 }
 
 .rounded-border{
-    border-radius: 5px;
-    box-shadow: 0px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+    border-radius: 0.313rem;
+    box-shadow: 0rem 0.063rem 0.256rem 0.063rem rgba(128, 128, 128, 0.16);
 }
 .container{
-    margin-top: 116px;
+    margin-top: 7.250rem;
 }
 
 .submit-timesheet{
     display: table;
     position: fixed;
-    top: 66px;
-    right: 30px;
-    width: 200px;
-    height: 30px;
+    top: 4.125rem;
+    right: 1.875rem;
+    width: 12.500rem;
+    height: 1.875rem;
     object-fit: contain;
-    border-radius: 21.5px;
-    box-shadow: 0px 3px 16.4px 1.6px rgba(128, 128, 128, 0.4);
+    border-radius: 1.344rem;
+    box-shadow: 0rem 0.188rem 1.025rem 0.100rem rgba(128, 128, 128, 0.4);
     background-color: #00aacb;
 }
 
@@ -162,35 +162,55 @@
 }
 
 .tick-icon{
-    margin-right: 8px;
+    margin-right: 0.500rem;
 }
 
 .projects{
-    font-size: 22px;
-    margin-left: 12px;
+    margin-left: 0.750rem;
 }
 
+.large-text{
+    font-size: 1.375rem;
+}
+.champian-ranking-bar{
+    width: 8.000rem;
+    height: 0.250rem;
+    display: inline-block;
+    background-color: #e5e5e5;
+    border-radius: 0.188rem;
+}
+
+.current-champian-ranking{
+    height: 0.250rem;
+    width: 5.000rem;
+    border-radius: 0.188rem;
+    background-image: linear-gradient(272deg, #24cced 1%, #1f7c8e);
+}
+.left-legend-points{
+    margin-left: 0.813rem;
+    font-size: 0.625rem;
+}
 .color-blue{
     color: #00aacb;
 }
 
 .week-project{
-    font-size: 12px;
-    width: 644px;
-    height: 120px;
+    font-size: 0.750rem;
+    width: 40.250rem;
+    height: 7.500rem;
     display: inline-block;
 }
 
 .progress-ribbon{
-    width: 484px;
-    margin-left: 30px;
+    width: 30.250rem;
+    margin-left: 1.875rem;
     overflow: hidden;
-    margin-top: 18px;
+    margin-top: 1.125rem;
 }
 
 .prorgess-ribbon-item{
     float: left;
-    height: 7px;
+    height: 0.438rem;
 }
 
 .background-purple{
@@ -213,32 +233,30 @@
     background-color: #b7c0cf;
 }
 
-.one{
-    width: 180px;
-}
-.two{
-    width: 68px;
+.progress-ribbon>.prorgess-ribbon-item:nth-child(1){
+    width: 11.250rem;
 }
 
-.three{
-    width: 104px
-    ;
+.progress-ribbon>.prorgess-ribbon-item:nth-child(2){
+    width: 4.250rem;
 }
-
-.four{
-    width: 124px;
+.progress-ribbon>.prorgess-ribbon-item:nth-child(3){
+    width: 6.500rem;
+}
+.progress-ribbon>.prorgess-ribbon-item:nth-child(4){
+    width: 7.750rem;
 }
 
 .prorgess-ribbon-item:first-child { 
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 1.563rem 0rem 0rem 1.563rem;
 }
 
 .prorgess-ribbon-item:last-child { 
-    border-radius: 0px 25px 25px 0px;
+    border-radius: 0rem 1.563rem 1.563em 0rem;
 }
 
 .progress-ribbon .prorgess-ribbon-item:not(:first-child) {
-    margin-left: 2px;
+    margin-left: 0.125rem;
 }
 
 .project-detail-listitem{
@@ -250,33 +268,33 @@
 }
 
 .project-name-container{
-    margin-left: 30px;
-    margin-top: 14px;
+    margin-left: 1.875rem;
+    margin-top: 0.875rem;
 }
 
 .project-color-bar{
-    width: 4px;
-    border-radius: 5px 5px 5px 5px;
+    width: 0.250rem;
+    border-radius: 0.313rem 0.313rem 0.313rem 0.313rem;
 }
 .project-bar{
-    height: 14px;
+    height: 0.875rem;
     display: inline-block;
 }
 .project-row{
-    margin-left: 30px;
-    margin-top: 22px;
+    margin-left: 1.875rem;
+    margin-top: 1.375rem;
 }
 
 .project-detail-listitem:not(:first-child) {
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 
 .project-name-bar{
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .project-work-on{
-    margin-left: 13px;
+    margin-left: 0.813rem;
 }
 
 *{
@@ -284,27 +302,27 @@
 }
 
 .timesheet-section{
-    margin-top: 20px;
+    margin-top: 1.250rem;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 390px;
+    height: 24.375rem;
 }
 
 .timesheet-header{
-    margin-left: 18px;
-    margin-right: 18px;
-    height: 46px;
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    height: 2.875rem;
     display: table;
     width: 100%;
 }
 
-.timesheet-section{
-    box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
-    border-radius: 5px;
+.timesheet-section, .day-project{
+    box-shadow: 0.006rem 0.063rem 0.256rem 0.063rem rgba(128, 128, 128, 0.16);
+    border-radius: 0.313rem;
 }
 
 .timesheet-header>.timesheet-heading{
-    font-size: 13px;
+    font-size: 0.813rem;
     display: inline-block;
     font-weight: 600;
     width: 25%;
@@ -312,8 +330,8 @@
     vertical-align: middle;
 }
 
-*{
-    font-size: 13px;
+.body{
+    font-size: 16px;
 }
 
 .color-sky-blue{
@@ -332,31 +350,31 @@
 }
 
 .option-list-item:not(:first-child){
-    margin-right: 28px;
+    margin-right: 1.750rem;
 }
 
 .option-list-item:first-child{
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 
 .day-heading{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .timesheet-body{
-    margin-left: 18px;
-    margin-right: 18px;
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
 }
 
 .day-timesheet{
-    margin-top: 20px;
+    margin-top: 1.250rem;
 }
 .day-timesheet>.day-project:first-child {
-    margin-top: 12px;
+    margin-top: 0.750rem;
 }
 
 .day-timesheet>.day-project:not(:first-child){
-    margin-top: 14px;
+    margin-top: 0.875rem;
 }
 
 .project-details-container{
@@ -366,26 +384,26 @@
 }
 
 .project-name-block, .project-comment-block{
-    margin-left: 22px;
+    margin-left: 1.375rem;
 }
 
 .day-project{
-    height: 64px;
+    height: 4.000rem;
     display: table;
     width: 100%;
 }
 
 .project-comment-block{
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .comment-icon{
     float: left;
-    margin-right: 8px;
+    margin-right: 0.500rem;
 }
 
 .time-spent{
-    margin-top: 14px;
+    margin-top: 0.875rem;
 }
 
 .options-container, .time-details-container{
@@ -402,30 +420,41 @@
 }
 
 .project-options{
-    margin-left: 16px;
+    margin-left: 1.000rem;
 }
 
-
-.day-project{
-    border-radius: 5px;
-    box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
-}
 
 .project-time-item{
     height: 50%;
+    display: table;
+    width: 100%;
 }
 
+.champian-image-container, .clock-image-container{
+    display: table-cell;
+    vertical-align: middle;
+    width: 15%;
+}
+
+.champian-icon, .clock-icon{
+    margin-left: 1.250rem;
+}
+
+.champian-details-container, .overall-project-details{
+    display: table-cell;
+    vertical-align: middle;
+}
 .notification-header{
-    margin-top: 20px;
+    margin-top: 1.250rem;
     line-height: normal;
-    margin-left: 15px;
+    margin-left: 0.938rem;
     font-weight: 600;
 }
 
 .notification-block{
     display: table;
     width: 100%;
-    height: 70px;
+    height: 4.375rem;
 }
 
 .confirm-icon-block, .notification-detail, .due, .more-notification-details{
@@ -442,7 +471,7 @@
 }
 
 .confirm-icon-block>input[type="radio"]{
-    margin-left: 15px;
+    margin-left: 0.938rem;
 }
 
 .action-detal-text{
@@ -451,15 +480,15 @@
 
 .due-anchor{
     text-align: center;
-    height: 20px;
-    border-radius: 14.5px;
-    font-size: 12px;
+    height: 1.063rem;
+    border-radius: 0.906rem;
+    font-size: 0.750rem;
     color: white;
     float: right;
-    margin-right: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
+    margin-right: 0.625rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    padding-top: 0.313rem;
 }
 
 .warning{
@@ -467,11 +496,11 @@
 }
 
 .person-detail{
-    margin-top: 12px;
+    margin-top: 0.750rem;
 }
 
 .notifications>.notification-block:not(:last-child){
-    border-bottom: 2px solid #e9edf0;
+    border-bottom: 0.125rem solid #e9edf0;
 }
 
 .success{
@@ -479,5 +508,12 @@
 }
 .notification-summary{
     background-color: #f3fbfd;
-    height: 46px;
+    height: 2.875rem;
+}
+
+.article-divider{
+    width: 16.250rem;
+    background: #e9edf0;
+    height: 0.125rem;
+    margin-left: 1.625rem;
 }

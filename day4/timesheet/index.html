@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>
 			Timesheet
@@ -8,13 +8,12 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	</head>
 	<body class="body">
 		<header class="header">
 			<section class="header-bar max-app-width background-white">
 				<div class="header-conatiner">
-					<div class="logo">
+					<div class="logo-container">
 						<a class="logo-link" href="#" title="logo">
 							<img class="logo-icon" src="./assets/logo/argil-dx.png"
 							srcset="./assets/logo/argil-dx@3x.png 99w, ./assets/logo/argil-dx@2x.png 66w, ./assets/logo/argil-dx.png 33w"
@@ -25,28 +24,34 @@
 					<div class="help-icons">
 						<ul class="menu clear">
 							<li class="user help-icon">
-								<a href="#" class="user-icon-link">
-									<img class="user-icon" src="./assets/user/user.png"
-										srcset="./assets/user/user@3x.png 69w, ./assets/user/user@2x.png 46w, ./assets/user/user.png 23w"
-										sizes="18px" 
-										alt="User icon">
-								</a>
+								<span class="logo-container">
+									<a href="#" class="user-icon-link">
+										<img class="user-icon" src="./assets/user/user.png"
+											srcset="./assets/user/user@3x.png 69w, ./assets/user/user@2x.png 46w, ./assets/user/user.png 23w"
+											sizes="18px" 
+											alt="User icon">
+									</a>
+								</span>
 							</li>
-							<li class="settings help-icon" >
-								<a href="#" class="help-icon-link">
-									<img class="settings-icon" src="./assets/settings/settings.png"
-										srcset="./assets/settings/settings@3x.png 78w, ./assets/settings/settings@2x.png 52w, ./assets/settings/settings.png 26w"
-										sizes="18px" 
-										alt="Settings icon">
-								</a>
+							<li class="settings-icon help-icon" >
+								<span class="settings-icon-container">
+									<a href="#" class="settings-icon-link">
+										<img class="settings-icon" src="./assets/settings/settings.png"
+											srcset="./assets/settings/settings@3x.png 78w, ./assets/settings/settings@2x.png 52w, ./assets/settings/settings.png 26w"
+											sizes="18px" 
+											alt="Settings icon">
+									</a>
+								</span>
 							</li>
-							<li class="bell help-icon">
-								<a href="#" class="bell-icon-link">
-									<img class="bell-icon" src="./assets/bell/bell.png"
-										srcset="./assets/bell/bell@3x.png 78w, ./assets/bell/bell@2x.png 52w, ./assets/bell/bell.png 26w"
-										sizes="18px" 
-										alt="Bell icon">
-								</a>
+							<li class="bell-icon-list-item help-icon">
+								<span class="bell-icon-container">
+									<a href="#" class="bell-icon-link">
+										<img class="bell-icon" src="./assets/bell/bell.png"
+											srcset="./assets/bell/bell@3x.png 78w, ./assets/bell/bell@2x.png 52w, ./assets/bell/bell.png 26w"
+											sizes="18px" 
+											alt="Bell icon">
+									</a>
+								</span>
 							</li>
 							<li class="manager-view help-icon">
 								<span class="manager-icon-span">
@@ -86,59 +91,80 @@
 		<main class="container max-app-width">
 			<!--dashboard section will spread in 9 cloumns-->
 			<section class="dashboard-section">
-				<article class="project-time-section">
+				<div class="project-time-section">
 					<!--3 cloumns-->
-					<div class="project-hours rounded-border background-white">
-							<div class="project-time-item">
-									<img class="clock-icon" src="./assets/clock/layer-5.png"
+					<article class="project-hours rounded-border background-white">
+						<div class="project-time-item">
+							<div class="clock-image-container">
+								<img class="clock-icon" src="./assets/clock/layer-5.png"
 									srcset="./assets/clock/layer-5@3x.png 78w, ./assets/clock/layer-5@2x.png 52w, ./assets/clock/layer-5.png 26w"
-									sizes="26px" 
+									sizes="20px" 
 									alt="Clock icon">
-								<span>04</span>Projects</div>
-							<div class="project-time-item">37 Hours spent this week</div>
-					</div>
-					<!--6 cloumns-->
-					<div class="week-project rounded-border background-white">
-							<div class="project-row">
-								<!--img tag goes here-->
-								<img class="hour-icon" src="./assets/hours/layer-6.jpg"
-									srcset="./assets/hours/layer-6@3x.jpg 78w, ./assets/hours/layer-6@2x.jpg 52w, ./assets/hours/layer-6.jpg 26w"
-									sizes="23px" 
-									alt="Hours icon">
-								<span class="projects">Projects</span>
-								<span class="project-work-on">worked on from</span>
-								<span class="project-worked-date"><a href="#" class="no-decoration color-blue">11 Feb to 15 Feb 2019</a></span>
 							</div>
-							<ul class="progress-ribbon">
-								<li class="prorgess-ribbon-item background-purple one"></li>
-								<li class="prorgess-ribbon-item background-blue two"></li>
-								<li class="prorgess-ribbon-item background-orange three"></li>
-								<li class="prorgess-ribbon-item background-green four"></li>
-							</ul>
-							<div class="project-name-container">
-								<ul class="project-detail-list">
-									<li class="project-detail-listitem">
-										<span class="project-color-bar background-purple project-bar"></span>
-										<span class="project-name-bar project-bar">Bright House Financial</span>
-									</li>
-									<li class="project-detail-listitem">
-										<span class="project-color-bar background-blue project-bar"></span>
-										<span class="project-name-bar project-bar">C&En</span>
-									</li>
-									<li class="project-detail-listitem">
-										<span class="project-color-bar background-orange project-bar"></span>
-										<span class="project-name-bar project-bar">Bajaj Finance</span>
-									</li>
-									<li class="project-detail-listitem">
-										<span class="project-color-bar background-green project-bar"></span>
-										<span class="project-name-bar project-bar">Internal Projects</span>
-									</li>
-								</ul>
+							<div class="overall-project-details">
+								<span class="project-count large-text">04</span>
+								<span class="project-text">Projects</span>
 							</div>
 						</div>
-				</article>
+						<div class="article-divider"></div>
+						<div class="project-time-item">
+							<div class="champian-image-container">
+								<img class="champian-icon" src="./assets/champian/layer-4.png"
+									srcset="./assets/champian/layer-4@3x.png 87w, ./assets/champian/layer-4@2x.png 58w, ./assets/champian/layer-4.png 29w"
+									sizes="20px" 
+									alt="Champian icon">
+							</div>
+							<div class="champian-details-container">
+								<div class="large-text">Champian</div>
+								<div class="champian-ranking-bar">
+									<div class="current-champian-ranking"></div>
+								</div>
+								<span class="left-legend-points">80 points to Legend</span>
+							</div>
+						</div>
+					</article>
+					<!--6 cloumns-->
+					<article class="week-project rounded-border background-white">
+						<div class="project-row">
+							<!--img tag goes here-->
+							<img class="hour-icon" src="./assets/hours/layer-6.jpg"
+								srcset="./assets/hours/layer-6@3x.jpg 78w, ./assets/hours/layer-6@2x.jpg 52w, ./assets/hours/layer-6.jpg 26w"
+								sizes="23px" 
+								alt="Hours icon">
+							<span class="projects large-text">Projects</span>
+							<span class="project-work-on">worked on from</span>
+							<span class="project-worked-date"><a href="#" class="no-decoration color-blue">11 Feb to 15 Feb 2019</a></span>
+						</div>
+						<ul class="progress-ribbon">
+							<li class="prorgess-ribbon-item background-purple"></li>
+							<li class="prorgess-ribbon-item background-blue"></li>
+							<li class="prorgess-ribbon-item background-orange"></li>
+							<li class="prorgess-ribbon-item background-green"></li>
+						</ul>
+						<div class="project-name-container">
+							<ul class="project-detail-list">
+								<li class="project-detail-listitem">
+									<span class="project-color-bar background-purple project-bar"></span>
+									<span class="project-name-bar project-bar">Bright House Financial</span>
+								</li>
+								<li class="project-detail-listitem">
+									<span class="project-color-bar background-blue project-bar"></span>
+									<span class="project-name-bar project-bar">C&En</span>
+								</li>
+								<li class="project-detail-listitem">
+									<span class="project-color-bar background-orange project-bar"></span>
+									<span class="project-name-bar project-bar">Bajaj Finance</span>
+								</li>
+								<li class="project-detail-listitem">
+									<span class="project-color-bar background-green project-bar"></span>
+									<span class="project-name-bar project-bar">Internal Projects</span>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</div>
 				<!--9 cloumns-->
-				<article class="timesheet-section background-white">
+				<div class="timesheet-section background-white">
 					<div class="timesheet-header">
 						<h3 class="timesheet-heading">Timesheet</h3>
 						<div class="timesheet-options">
@@ -177,7 +203,7 @@
 							<div class="day-heading">Today's Timesheet(3)</div>
 							<div class="date-heading">5th Feb. 2019</div>
 							<!--can have n number of projects in a day-->
-							<div class="day-project">
+							<article class="day-project">
 								<!--div for projct name and comment-->
 								<div class="project-details-container">
 									<div class="project-name-block"><span class="project-color-bar background-orange project-bar"></span><span class="project-name-bar">Bajaj Finance</span></div>
@@ -223,9 +249,9 @@
 										</li>
 									</ul>
 								</div>
-							</div>
+							</article>
 							<!--adding more day projects-->
-							<div class="day-project">
+							<article class="day-project">
 								<!--div for projct name and comment-->
 								<div class="project-details-container">
 									<div class="project-name-block"><span class="project-color-bar background-purple project-bar"></span><span class="project-name-bar">Bright House Financial</span></div>
@@ -271,9 +297,9 @@
 										</li>
 									</ul>
 								</div>
-							</div>
+							</article>
 							<!--adding more day projects-->
-							<div class="day-project">
+							<article class="day-project">
 								<!--div for projct name and comment-->
 								<div class="project-details-container">
 									<div class="project-name-block"><span class="project-color-bar background-green project-bar"></span><span class="project-name-bar">Internal Projects</span></div>
@@ -319,16 +345,16 @@
 										</li>
 									</ul>
 								</div>
-							</div>
+							</article>
 						</div>
 						<div class="day-timesheet">
 							<div class="day-heading">Yesterday’s Timesheet(3)</div>
 							<div class="date-heading">4th Feb, 2019</div>
 							<!--can have n number of projects in a day-->
-							<div class="day-project">
+							<article class="day-project">
 									<!--div for projct name and comment-->
 									<div class="project-details-container">
-										<div class="project-name-block"><span class="project-color-bar background-blue project-bar"></span><span class="project-name-bar">C&En</span></div>
+										<div class="project-name-block"><span class="project-color-bar background-blue project-bar"></span><span class="project-name-bar">C&amp;En</span></div>
 										<div class="project-comment-block">
 											<span class="comment-icon">
 												<img class="description-icon" src="./assets/description/desc.png"
@@ -371,10 +397,10 @@
 											</li>
 										</ul>
 									</div>
-								</div>
+								</article>
 						</div>
 					</div>
-				</article>
+				</div>
 			</section>
 			<!--notification section will spread in 3 cloumns-->
 			<aside class="notification-section rounded-border">
@@ -482,7 +508,7 @@
 					</article>
 					<article class="notification-block">
 						<div class="confirm-icon-block">
-							<input type="radio">
+							<input type="radio" checked>
 						</div>
 						<div class="notification-detail">
 							<div class="action-detail">
