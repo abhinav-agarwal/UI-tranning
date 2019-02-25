@@ -1,0 +1,26 @@
+.row{
+    width: 23.750rem;
+    margin: 0 auto;
+}
+.row > .personal-detail{
+    display: inline-block;
+}
+
+.personal-detail.detail-key{
+    width: 20%;
+    text-align: right;
+}
+
+.detail-key + .detail-seperator{
+    width: 20%;
+    text-align: center;
+}
+
+.body{
+    font-size: 18px;
+    font-family: Calibri;
+}
+
+.profile-image{
+    width: 23.750rem;
+}

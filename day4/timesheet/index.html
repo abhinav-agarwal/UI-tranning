@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Timesheet
+		</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body class="body">
+		<header class="header">
+			<section class="header-bar max-app-width background-white">
+				<div class="header-conatiner">
+					<div class="logo-container">
+						<a class="logo-link" href="#" title="logo">
+							<img class="logo-icon" src="./assets/logo/argil-dx.png"
+							srcset="./assets/logo/argil-dx@3x.png 99w, ./assets/logo/argil-dx@2x.png 66w, ./assets/logo/argil-dx.png 33w"
+										sizes="23px" 
+										alt="User icon">
+						</a>
+					</div>
+					<div class="help-icons">
+						<ul class="menu clear">
+							<li class="user help-icon">
+								<span class="logo-container">
+									<a href="#" class="user-icon-link">
+										<img class="user-icon" src="./assets/user/user.png"
+											srcset="./assets/user/user@3x.png 69w, ./assets/user/user@2x.png 46w, ./assets/user/user.png 23w"
+											sizes="18px" 
+											alt="User icon">
+									</a>
+								</span>
+							</li>
+							<li class="settings-icon help-icon" >
+								<span class="settings-icon-container">
+									<a href="#" class="settings-icon-link">
+										<img class="settings-icon" src="./assets/settings/settings.png"
+											srcset="./assets/settings/settings@3x.png 78w, ./assets/settings/settings@2x.png 52w, ./assets/settings/settings.png 26w"
+											sizes="18px" 
+											alt="Settings icon">
+									</a>
+								</span>
+							</li>
+							<li class="bell-icon-list-item help-icon">
+								<span class="bell-icon-container">
+									<a href="#" class="bell-icon-link">
+										<img class="bell-icon" src="./assets/bell/bell.png"
+											srcset="./assets/bell/bell@3x.png 78w, ./assets/bell/bell@2x.png 52w, ./assets/bell/bell.png 26w"
+											sizes="18px" 
+											alt="Bell icon">
+									</a>
+								</span>
+							</li>
+							<li class="manager-view help-icon">
+								<span class="manager-icon-span">
+									<img class="manager-icon" src="./assets/manager/layer-14.png"
+										srcset="./assets/manager/layer-14@3x.png 48w, ./assets/manager/layer-14@2x.png 32w, ./assets/manager/layer-14.png 16w"
+										sizes="11px" 
+										alt="Manager icon">
+								</span>
+								<span class="manager-view-span"><a class="manager-view-anchor no-decoration" href="#">Switch to Manager View</a></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<nav class="navigation-bar">
+				<div class="navigation-table max-app-width">
+					<ul class="menu">
+						<li class="nav-link-listitem"><a class="nav-link" href="#">Dashboard</a></li>
+					</ul>
+				</div>
+				<div class="submit-timesheet-container">
+					<div class="submit-timesheet">
+						<a href="#" class="submit-link">
+							<span class="tick-icon-span">
+								<!-- tick icon-->
+								<img class="tick-icon" src="./assets/tick/layer-4.png"
+											srcset="./assets/tick/layer-4@3x.png 51w, ./assets/tick/layer-42x.png 34w, ./assets/tick/layer-4.png 17w"
+											sizes="17px" 
+											alt="User icon">
+							</span>
+							<span class="white-color">Submit Timesheet</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="container max-app-width">
+			<!--dashboard section will spread in 9 cloumns-->
+			<section class="dashboard-section">
+				<div class="project-time-section">
+					<!--3 cloumns-->
+					<article class="project-hours rounded-border background-white">
+						<div class="project-time-item">
+							<div class="clock-image-container">
+								<img class="clock-icon" src="./assets/clock/layer-5.png"
+									srcset="./assets/clock/layer-5@3x.png 78w, ./assets/clock/layer-5@2x.png 52w, ./assets/clock/layer-5.png 26w"
+									sizes="20px" 
+									alt="Clock icon">
+							</div>
+							<div class="overall-project-details">
+								<span class="project-count large-text">04</span>
+								<span class="project-text">Projects</span>
+							</div>
+						</div>
+						<div class="article-divider"></div>
+						<div class="project-time-item">
+							<div class="champian-image-container">
+								<img class="champian-icon" src="./assets/champian/layer-4.png"
+									srcset="./assets/champian/layer-4@3x.png 87w, ./assets/champian/layer-4@2x.png 58w, ./assets/champian/layer-4.png 29w"
+									sizes="20px" 
+									alt="Champian icon">
+							</div>
+							<div class="champian-details-container">
+								<div class="large-text">Champian</div>
+								<div class="champian-ranking-bar">
+									<div class="current-champian-ranking"></div>
+								</div>
+								<span class="left-legend-points">80 points to Legend</span>
+							</div>
+						</div>
+					</article>
+					<!--6 cloumns-->
+					<article class="week-project rounded-border background-white">
+						<div class="project-row">
+							<!--img tag goes here-->
+							<img class="hour-icon" src="./assets/hours/layer-6.jpg"
+								srcset="./assets/hours/layer-6@3x.jpg 78w, ./assets/hours/layer-6@2x.jpg 52w, ./assets/hours/layer-6.jpg 26w"
+								sizes="23px" 
+								alt="Hours icon">
+							<span class="projects large-text">Projects</span>
+							<span class="project-work-on">worked on from</span>
+							<span class="project-worked-date"><a href="#" class="no-decoration color-blue">11 Feb to 15 Feb 2019</a></span>
+						</div>
+						<ul class="progress-ribbon">
+							<li class="prorgess-ribbon-item background-purple"></li>
+							<li class="prorgess-ribbon-item background-blue"></li>
+							<li class="prorgess-ribbon-item background-orange"></li>
+							<li class="prorgess-ribbon-item background-green"></li>
+						</ul>
+						<div class="project-name-container">
+							<ul class="project-detail-list">
+								<li class="project-detail-listitem">
+									<span class="project-color-bar background-purple project-bar"></span>
+									<span class="project-name-bar project-bar">Bright House Financial</span>
+								</li>
+								<li class="project-detail-listitem">
+									<span class="project-color-bar background-blue project-bar"></span>
+									<span class="project-name-bar project-bar">C&En</span>
+								</li>
+								<li class="project-detail-listitem">
+									<span class="project-color-bar background-orange project-bar"></span>
+									<span class="project-name-bar project-bar">Bajaj Finance</span>
+								</li>
+								<li class="project-detail-listitem">
+									<span class="project-color-bar background-green project-bar"></span>
+									<span class="project-name-bar project-bar">Internal Projects</span>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+				<!--9 cloumns-->
+				<div class="timesheet-section background-white">
+					<div class="timesheet-header">
+						<h3 class="timesheet-heading">Timesheet</h3>
+						<div class="timesheet-options">
+							<ul class="option-list">
+								<li class="option-list-item">
+									<a href="#" class="no-decoration">
+										<img class="add-icon" src="./assets/add/layer-13.png"
+											srcset="./assets/add/layer-13@3x.png 45w, ./assets/add/layer-13@2x.png 30w, ./assets/add/layer-13.png 15w"
+											sizes="10px" 
+											alt="Add icon">
+										<span class="color-sky-blue">Add Task</span>
+									</a>
+								</li>
+								<li class="option-list-item">
+									<a href="#" class="no-decoration">
+										<img class="search-icon" src="./assets/calendar/layer-4.png"
+											srcset="./assets/calendar/layer-4@3x.png 54w, ./assets/calendar/layer-4@2x.png 36w, ./assets/calendar/layer-4.png 18"
+											sizes="12px" 
+											alt="Search icon">
+										<span class="color-sky-blue">Week View</span>
+									</a>
+								</li>
+								<li class="option-list-item search-item">
+									<img class="search-icon" src="./assets/search/layer-11.png"
+										srcset="./assets/search/layer-11@3x.png 51w, ./assets/search/layer-11@2x.png 34w, ./assets/search/layer-11.png 17w"
+										sizes="12px" 
+										alt="Search icon">
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--only this body is scrollable-->
+					<div class="timesheet-body">
+						<!--timesheet for one day can contains multiple entries of projects-->
+						<div class="day-timesheet">
+							<div class="day-heading">Today's Timesheet(3)</div>
+							<div class="date-heading">5th Feb. 2019</div>
+							<!--can have n number of projects in a day-->
+							<article class="day-project">
+								<!--div for projct name and comment-->
+								<div class="project-details-container">
+									<div class="project-name-block"><span class="project-color-bar background-orange project-bar"></span><span class="project-name-bar">Bajaj Finance</span></div>
+									<div class="project-comment-block">
+										<span class="comment-icon">
+											<img class="description-icon" src="./assets/description/desc.png"
+												srcset="./assets/description/desc@3x.png 54w, ./assets/description/desc@2x.png 36w, ./assets/description/desc.png 18w"
+												sizes="12px" 
+												alt="Description icon">
+										</span>
+										<p class="project-comment">Working on Redesigning the UX of Loan providing platform for Bajaj Finance.</p></div>
+								</div>
+								<!--div for time spent-->
+								<div class="time-details-container">
+									<div>
+										<span class="time-spent-icon">
+											<img class="time-spent-icon" src="./assets/timespent/layer-12.png"
+												srcset="./assets/timespent/layer-12@3x.png 54w, ./assets/timespent/layer-12@2x.png 36w, ./assets/timespent/layer-12.png 18w"
+												sizes="12px" 
+												alt="Time spent icon">
+										</span>
+										<span class="time-spent">Time spent</span></div>
+									<div class="time-spent">04:00 pm - 07:00 pm</div>
+								</div>
+								<!--div for edit and more options-->
+								<div class="options-container">
+									<ul class="options-list">
+										<li class="options-listitem project-details-edit">
+											<a href="#">
+												<img class="edit-icon" src="./assets/edit/edit.png"
+													srcset="./assets/edit/edit@3x.png 60w, ./assets/edit/edit@2x.png 40w, ./assets/edit/edit.png 20w"
+													sizes="14px" 
+													alt="Edit icon">
+											</a>
+										</li>
+										<li class="options-listitem project-options">
+											<a href="#">
+												<img class="options-icon" src="./assets/options/circle.png"
+													srcset="./assets/options/circle@3x.png 15w, ./assets/options/circle@2x.png 10w, ./assets/options/circle.png 5w"
+													sizes="4px" 
+													alt="Options icon">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</article>
+							<!--adding more day projects-->
+							<article class="day-project">
+								<!--div for projct name and comment-->
+								<div class="project-details-container">
+									<div class="project-name-block"><span class="project-color-bar background-purple project-bar"></span><span class="project-name-bar">Bright House Financial</span></div>
+									<div class="project-comment-block">
+										<span class="comment-icon">
+											<img class="description-icon" src="./assets/description/desc.png"
+												srcset="./assets/description/desc@3x.png 54w, ./assets/description/desc@2x.png 36w, ./assets/description/desc.png 18w"
+												sizes="12px" 
+												alt="Description icon">
+										</span>
+										<p class="project-comment">Working on Redesigning the UX of Loan providing platform for BHF.</p></div>
+								</div>
+								<!--div for time spent-->
+								<div class="time-details-container">
+									<div>
+										<span class="time-spent-icon">
+											<img class="time-spent-icon" src="./assets/timespent/layer-12.png"
+												srcset="./assets/timespent/layer-12@3x.png 54w, ./assets/timespent/layer-12@2x.png 36w, ./assets/timespent/layer-12.png 18w"
+												sizes="12px" 
+												alt="Time spent icon">
+										</span>
+										<span class="time-spent">Time spent</span></div>
+									<div class="time-spent">01:00 pm - 04:00 pm</div>
+								</div>
+								<!--div for edit and more options-->
+								<div class="options-container">
+									<ul class="options-list">
+										<li class="options-listitem project-details-edit">
+											<a href="#">
+												<img class="edit-icon" src="./assets/edit/edit.png"
+													srcset="./assets/edit/edit@3x.png 60w, ./assets/edit/edit@2x.png 40w, ./assets/edit/edit.png 20w"
+													sizes="14px" 
+													alt="Edit icon">
+											</a>
+										</li>
+										<li class="options-listitem project-options">
+											<a href="#">
+												<img class="options-icon" src="./assets/options/circle.png"
+													srcset="./assets/options/circle@3x.png 15w, ./assets/options/circle@2x.png 10w, ./assets/options/circle.png 5w"
+													sizes="4px" 
+													alt="Options icon">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</article>
+							<!--adding more day projects-->
+							<article class="day-project">
+								<!--div for projct name and comment-->
+								<div class="project-details-container">
+									<div class="project-name-block"><span class="project-color-bar background-green project-bar"></span><span class="project-name-bar">Internal Projects</span></div>
+									<div class="project-comment-block">
+										<span class="comment-icon">
+											<img class="description-icon" src="./assets/description/desc.png"
+												srcset="./assets/description/desc@3x.png 54w, ./assets/description/desc@2x.png 36w, ./assets/description/desc.png 18w"
+												sizes="12px" 
+												alt="Description icon">
+										</span>
+										<p class="project-comment">Working on Redesigning the UX of Loan providing platform for Internal Projects.</p></div>
+								</div>
+								<!--div for time spent-->
+								<div class="time-details-container">
+									<div>
+										<span class="time-spent-icon">
+											<img class="time-spent-icon" src="./assets/timespent/layer-12.png"
+												srcset="./assets/timespent/layer-12@3x.png 54w, ./assets/timespent/layer-12@2x.png 36w, ./assets/timespent/layer-12.png 18w"
+												sizes="12px" 
+												alt="Time spent icon">
+										</span>
+										<span class="time-spent">Time spent</span></div>
+									<div class="time-spent">09:00 am - 12:00 pm</div>
+								</div>
+								<!--div for edit and more options-->
+								<div class="options-container">
+									<ul class="options-list">
+										<li class="options-listitem project-details-edit">
+											<a href="#">
+												<img class="edit-icon" src="./assets/edit/edit.png"
+													srcset="./assets/edit/edit@3x.png 60w, ./assets/edit/edit@2x.png 40w, ./assets/edit/edit.png 20w"
+													sizes="14px" 
+													alt="Edit icon">
+											</a>
+										</li>
+										<li class="options-listitem project-options">
+											<a href="#">
+												<img class="options-icon" src="./assets/options/circle.png"
+													srcset="./assets/options/circle@3x.png 15w, ./assets/options/circle@2x.png 10w, ./assets/options/circle.png 5w"
+													sizes="4px" 
+													alt="Options icon">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</article>
+						</div>
+						<div class="day-timesheet">
+							<div class="day-heading">Yesterday’s Timesheet(3)</div>
+							<div class="date-heading">4th Feb, 2019</div>
+							<!--can have n number of projects in a day-->
+							<article class="day-project">
+									<!--div for projct name and comment-->
+									<div class="project-details-container">
+										<div class="project-name-block"><span class="project-color-bar background-blue project-bar"></span><span class="project-name-bar">C&amp;En</span></div>
+										<div class="project-comment-block">
+											<span class="comment-icon">
+												<img class="description-icon" src="./assets/description/desc.png"
+													srcset="./assets/description/desc@3x.png 54w, ./assets/description/desc@2x.png 36w, ./assets/description/desc.png 18w"
+													sizes="12px" 
+													alt="Description icon">
+											</span>
+											<p class="project-comment">Working on Redesigning the UX of Loan providing platform for C&En.</p></div>
+									</div>
+									<!--div for time spent-->
+									<div class="time-details-container">
+										<div>
+											<span class="time-spent-icon">
+												<img class="time-spent-icon" src="./assets/timespent/layer-12.png"
+													srcset="./assets/timespent/layer-12@3x.png 54w, ./assets/timespent/layer-12@2x.png 36w, ./assets/timespent/layer-12.png 18w"
+													sizes="12px" 
+													alt="Time spent icon">
+											</span>
+											<span class="time-spent">Time spent</span></div>
+										<div class="time-spent">05:00 pm - 07:00 pm</div>
+									</div>
+									<!--div for edit and more options-->
+									<div class="options-container">
+										<ul class="options-list">
+											<li class="options-listitem project-details-edit">
+												<a href="#">
+													<img class="edit-icon" src="./assets/edit/edit.png"
+														srcset="./assets/edit/edit@3x.png 60w, ./assets/edit/edit@2x.png 40w, ./assets/edit/edit.png 20w"
+														sizes="14px" 
+														alt="Edit icon">
+												</a>
+											</li>
+											<li class="options-listitem project-options">
+												<a href="#">
+													<img class="options-icon" src="./assets/options/circle.png"
+														srcset="./assets/options/circle@3x.png 15w, ./assets/options/circle@2x.png 10w, ./assets/options/circle.png 5w"
+														sizes="4px" 
+														alt="Options icon">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--notification section will spread in 3 cloumns-->
+			<aside class="notification-section rounded-border">
+				<h2 class="notification-header">My Notifications</h2>
+				<div class="notifications">
+					<article class="notification-block">
+						<div class="confirm-icon-block">
+							<input type="radio">
+						</div>
+						<div class="notification-detail">
+							<div class="action-detail">
+								<span class="action-detal-text">
+									Submit Timesheet
+								</span>
+								<a href="#" class="due-anchor no-decoration warning">
+									Due Today
+								</a>
+							</div>
+							<div class="person-detail">To: Ankur Mittal</div>
+						</div>
+						<div class="more-notification-details">
+							<!--arrow icon goes here-->
+							<a href="#">
+								<img class="arrow-icon" src="./assets/arrow/layer-7.png"
+									srcset="./assets/arrow/layer-7@3x.png 42w, ./assets/arrow/layer-7@2x.png 28w, ./assets/arrow/layer-7.png 14w"
+									sizes="10px" 
+									alt="Arrow icon">
+							</a>
+						</div>
+					</article>
+					<article class="notification-block">
+						<div class="confirm-icon-block">
+							<input type="radio">
+						</div>
+						<div class="notification-detail">
+							<div class="action-detail">
+								<span class="action-detal-text">
+									Approve Timesheet
+								</span>
+								<a href="#" class="due-anchor no-decoration background-grey">
+									Due in 2 Days
+								</a>
+							</div>
+							<div class="person-detail">Emp Name - Rohan Vora</div>
+						</div>
+						<div class="more-notification-details">
+							<!--arrow icon goes here-->
+							<a href="#">
+								<img class="arrow-icon" src="./assets/arrow/layer-7.png"
+									srcset="./assets/arrow/layer-7@3x.png 42w, ./assets/arrow/layer-7@2x.png 28w, ./assets/arrow/layer-7.png 14w"
+									sizes="10px" 
+									alt="Arrow icon">
+							</a>
+						</div>
+					</article>
+					<article class="notification-block">
+						<div class="confirm-icon-block">
+							<input type="radio">
+						</div>
+						<div class="notification-detail">
+							<div class="action-detail">
+								<span class="action-detal-text">
+									Approve Timesheet
+								</span>
+								<a href="#" class="due-anchor no-decoration background-grey">
+									Due in 2 Days
+								</a>
+							</div>
+							<div class="person-detail">Emp Name - Ammar Naseem</div>
+						</div>
+						<div class="more-notification-details">
+							<!--arrow icon goes here-->
+							<a href="#">
+								<img class="arrow-icon" src="./assets/arrow/layer-7.png"
+									srcset="./assets/arrow/layer-7@3x.png 42w, ./assets/arrow/layer-7@2x.png 28w, ./assets/arrow/layer-7.png 14w"
+									sizes="10px" 
+									alt="Arrow icon">
+							</a>
+						</div>
+					</article>
+					<article class="notification-block">
+						<div class="confirm-icon-block">
+							<input type="radio">
+						</div>
+						<div class="notification-detail">
+							<div class="action-detail">
+								<span class="action-detal-text">
+									Approve Timesheet
+								</span>
+								<a href="#" class="due-anchor no-decoration background-grey	">
+									Due in 2 Days
+								</a>
+							</div>
+							<div class="person-detail">Emp Name - Siddarth Naudiyal</div>
+						</div>
+						<div class="more-notification-details">
+							<!--arrow icon goes here-->
+							<a href="#">
+								<img class="arrow-icon" src="./assets/arrow/layer-7.png"
+									srcset="./assets/arrow/layer-7@3x.png 42w, ./assets/arrow/layer-7@2x.png 28w, ./assets/arrow/layer-7.png 14w"
+									sizes="10px" 
+									alt="Arrow icon">
+							</a>
+						</div>
+					</article>
+					<article class="notification-block">
+						<div class="confirm-icon-block">
+							<input type="radio" checked>
+						</div>
+						<div class="notification-detail">
+							<div class="action-detail">
+								<span class="action-detal-text success">
+									Approve Timesheet
+								</span>
+								<a href="#" class="due-anchor no-decoration background-green">
+									Done
+								</a>
+							</div>
+							<div class="person-detail success">Emp Name - Pranjal</div>
+						</div>
+						<div class="more-notification-details">
+							<!--arrow icon goes here-->
+							<a href="#">
+								<img class="arrow-icon" src="./assets/arrow/layer-7.png"
+									srcset="./assets/arrow/layer-7@3x.png 42w, ./assets/arrow/layer-7@2x.png 28w, ./assets/arrow/layer-7.png 14w"
+									sizes="10px" 
+									alt="Arrow icon">
+							</a>
+						</div>
+					</article>
+				</div>
+				<div class="notification-summary">
+					<div class="layer-9-icon">
+						<!--first image here-->
+					</div>
+					<div class="summary">
+						<div class="summary-heading">Congratulation!</div>
+						<div class="summary-detail">You have completed 9 tasks last week</div>
+					</div>
+					<div class="layer-10-icon">
+						<!--second image here-->
+					</div>
+				</div>
+			</aside>
+		</main>
+		<footer class="footer">
+			<!--Page footer goes here-->
+		</footer>
+	</body>
+</html>
